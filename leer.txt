@@ -1,0 +1,23 @@
+1.- Creamos nuestro fichero dockerfile.json con la instrucción: npm init -y
+2.- npm install express mysql2 dotenv   (express es el framework de backend de node)
+3.- Creo la carpeta src y dentro index.js
+4.- Añadimos en el package.json una propiedad mas que se llama "type": "module" para poder utilizar los import dentro de los ficheros
+
+5.- Puedo ejecutar mi proyecto con npm start
+
+6.- Creo el fichero docker-compose.yml y especifico lo que quiero crear
+7.- Instalar la extensión docker dentro de Visual Studio Code
+
+
+8.- Ejecutamos en la terminal donde esta nuestro proyecto: docker compose up
+
+9.- Podemos visualizar nuestra base de datos mysql con algún visor por ejemplo DBeaver
+10.- Tengo que cambiar en la conexion el puerto al 3307
+11.- Si da problemas de conexion cambiar la propiedad de "Driver properties" alloPublickeyRetriveral a true
+
+12.- Para conectarse a través de codigo necesitamos crear una variable createPool from 'mysql2/promise', tal como se puede ver en app.js
+13.- si yo lanzo el node con: npm start y luego veo la web localhost:3000/ping tengo la respuesta pedida en el app.js
+
+14.- Genero el fichero Dockerfile
+15.- Una vez creado el fichero Dockerfile lo puedo generar de la siguiente manera: "docker build -t nodemysql ."
+16.- con "docker images" podemos ver las imagenes creadas
